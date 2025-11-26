@@ -1,0 +1,1113 @@
+{
+  "items":
+  [
+    {
+      "id": "ARACK",
+      "name": "Arack",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 90,
+      "strength": 0,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "FLAMING_FLAY",
+      "name": "Flaming Flay",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 200,
+      "strength": 250,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ASPECT_OF_THE_JERRY_SIGNATURE",
+      "name": "Aspect of the Jerry, Signature Edition",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 2,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "GREAT_SPOOK_SWORD",
+      "name": "Great Spook Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 0,
+      "strength": 0,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "DAEDALUS_AXE",
+      "name": "Daedalus Blade",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 232,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SWORD_OF_REVELATIONS",
+      "name": "Sword of Revelations",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 180,
+      "strength": 50,
+      "ability": null
+    },
+    {
+      "id": "JERRY_STAFF",
+      "name": "Jerry-chine Gun",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 80,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "MIDAS_STAFF",
+      "name": "Midas Staff",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 130,
+      "strength": 150,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "ASTRAEA",
+      "name": "Astraea",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 270,
+      "strength": 150,
+      "ability": ["Right click"]
+    },
+      {
+      "id": "FANCY_SWORD",
+      "name": "Fancy Sword",
+      "weapon_type": "SWORD",
+      "rarity": "COMMON",
+      "damage": 20,
+      "strength": 0,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "SQUIRE_SWORD",
+      "name": "Squire Sword",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 10,
+      "ability": null
+    },
+    {
+      "id": "ASPECT_OF_THE_DRAGON",
+      "name": "Aspect of the Dragons",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 225,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "FLOWER_OF_TRUTH",
+      "name": "Flower of Truth",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 160,
+      "strength": 300,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "PRISMARINE_BOW",
+      "name": "Prismarine Bow",
+      "weapon_type": "BOW",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 25,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "WITHER_CLOAK",
+      "name": "Wither Cloak Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 190,
+      "strength": 135,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ASPECT_OF_THE_JERRY",
+      "name": "Aspect of the Jerry",
+      "weapon_type": "SWORD",
+      "rarity": "COMMON",
+      "damage": 1,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "CLEAVER",
+      "name": "Cleaver",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 40,
+      "strength": 10,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "ASPECT_OF_THE_END",
+      "name": "Aspect of the End",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 100,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "BONE_BOOMERANG",
+      "name": "Bonemerang",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 270,
+      "strength": 130,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "PRISMARINE_BLADE",
+      "name": "Prismarine Blade",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 25,
+      "ability": null
+    },
+    {
+      "id": "NECROMANCER_SWORD",
+      "name": "Necromancer Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 250,
+      "strength": 125,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "BAT_WAND",
+      "name": "Spirit Sceptre",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 180,
+      "strength": 0,
+      "ability": ["Right click"]
+
+    },
+    {
+      "id": "FIRE_FURY_STAFF",
+      "name": "Fire Fury Staff",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 100,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "EMBER_ROD",
+      "name": "Ember Rod",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 80,
+      "strength": 35,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "SULPHUR_BOW",
+      "name": "Sulphur Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 200,
+      "strength": 100,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "SHADOW_FURY",
+      "name": "Shadow Fury",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 300,
+      "strength": 130,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "LEAPING_SWORD",
+      "name": "Leaping Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 150,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "STONE_BLADE",
+      "name": "Adaptive Blade",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 170,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "GHOUL_BUSTER",
+      "name": "Ghoul Buster",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 140,
+      "strength": 90,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "RAGNAROCK_AXE",
+      "name": "Ragnarock",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 200,
+      "strength": 70,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "SUPER_UNDEAD_BOW",
+      "name": "Super Undead Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 220,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SPIRIT_SWORD",
+      "name": "Spirit Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 210,
+      "strength": 50,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "FEL_SWORD",
+      "name": "Fel Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 190,
+      "strength": 135,
+      "ability": null
+    },
+    {
+      "id": "TRIBAL_SPEAR",
+      "name": "Tribal Spear",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 0,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "RAIDER_AXE",
+      "name": "Raider Sword",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 80,
+      "strength": 50,
+      "ability": null
+    },
+    {
+      "id": "TACTICIAN_SWORD",
+      "name": "Tactician's Sword",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 50,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SLIME_BOW",
+      "name": "Slime Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 100,
+      "strength": 0,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "WITHER_BOW",
+      "name": "Wither Bow",
+      "weapon_type": "BOW",
+      "rarity": "UNCOMMON",
+      "damage": 30,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SOULS_REBOUND",
+      "name": "Souls Rebound",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 450,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "DEATH_BOW",
+      "name": "Death Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 300,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "DECENT_BOW",
+      "name": "Decent Bow",
+      "weapon_type": "BOW",
+      "rarity": "UNCOMMON",
+      "damage": 45,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "HURRICANE_BOW",
+      "name": "Hurricane Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 50,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "GIANT_CLEAVER",
+      "name": "Giant Cleaver",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 235,
+      "strength": 120,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "LAST_BREATH",
+      "name": "Last Breath",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 200,
+      "strength": 180,
+      "ability": null
+    },
+    {
+      "id": "SUPER_CLEAVER",
+      "name": "Super Cleaver",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 105,
+      "strength": 20,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "EMERALD_BLADE",
+      "name": "Emerald Blade",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 130,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SILK_EDGE_SWORD",
+      "name": "Silk-Edge Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 175,
+      "strength": 125,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "GIANTS_SWORD",
+      "name": "Giant's Sword",
+      "weapon_type": "LONGSWORD",
+      "rarity": "LEGENDARY",
+      "damage": 500,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "HUNTER_KNIFE",
+      "name": "Hunter Knife",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "HYPERION",
+      "name": "Hyperion",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 260,
+      "strength": 150,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ARTISANAL_SHORTBOW",
+      "name": "Artisanal Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "RARE",
+      "damage": 40,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "ORNATE_ZOMBIE_SWORD",
+      "name": "Ornate Zombie Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 110,
+      "strength": 60,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "VALKYRIE",
+      "name": "Valkyrie",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 270,
+      "strength": 145,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "MERCENARY_AXE",
+      "name": "Mercenary Sword",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 70,
+      "strength": 20,
+      "ability": null
+    },
+    {
+      "id": "FIRE_FREEZE_STAFF",
+      "name": "Fire Freeze Staff",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 50,
+      "strength": 20,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ITEM_SPIRIT_BOW",
+      "name": "Spirit Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 210,
+      "strength": 100,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "SOUL_WHIP",
+      "name": "Soul Whip",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 145,
+      "strength": 175,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "SWORD_OF_BAD_HEALTH",
+      "name": "Sword of Bad Health",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 200,
+      "strength": 50,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "YETI_SWORD",
+      "name": "Yeti Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 150,
+      "strength": 170,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "PIGMAN_SWORD",
+      "name": "Pigman Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 200,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "RUNIC_STAFF",
+      "name": "Aurora Staff",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 20,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "MIDAS_SWORD",
+      "name": "Midas' Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 170,
+      "strength": 0,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "NECRON_BLADE",
+      "name": "Necron's Blade (Unrefined)",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 260,
+      "strength": 110,
+      "ability": null
+    },
+    {
+      "id": "BLADE_OF_THE_VOLCANO",
+      "name": "Blade of the Volcano",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 220,
+      "strength": 70,
+      "ability": null
+    },
+    {
+      "id": "SPIDER_SWORD",
+      "name": "Spider Sword",
+      "weapon_type": "SWORD",
+      "rarity": "COMMON",
+      "damage": 30,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "SAVANA_BOW",
+      "name": "Savanna Bow",
+      "weapon_type": "BOW",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "GEMSTONE_GAUNTLET",
+      "name": "Gemstone Gauntlet",
+      "weapon_type": "GAUNTLET",
+      "rarity": "LEGENDARY",
+      "damage": 300,
+      "strength": 50,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "RUNAANS_BOW",
+      "name": "Runaan's Bow",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 160,
+      "strength": 50,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "ROGUE_SWORD",
+      "name": "Rogue Sword",
+      "weapon_type": "SWORD",
+      "rarity": "COMMON",
+      "damage": 20,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "FLAMING_SWORD",
+      "name": "Flaming Sword",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 50,
+      "strength": 20,
+      "ability": null
+    },
+    {
+      "id": "SCYLLA",
+      "name": "Scylla",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 270,
+      "strength": 150,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "LIVID_DAGGER",
+      "name": "Livid Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 210,
+      "strength": 60,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "UNDEAD_SWORD",
+      "name": "Undead Sword",
+      "weapon_type": "SWORD",
+      "rarity": "COMMON",
+      "damage": 30,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "VENOMS_TOUCH",
+      "name": "Venom's Touch",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 250,
+      "strength": 100,
+      "ability": null
+    },
+    {
+      "id": "HYPER_CLEAVER",
+      "name": "Hyper Cleaver",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 175,
+      "strength": 100,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "UNDEAD_BOW",
+      "name": "Undead Bow",
+      "weapon_type": "BOW",
+      "rarity": "RARE",
+      "damage": 80,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "GOLEM_SWORD",
+      "name": "Golem Sword",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 80,
+      "strength": 125,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "DARK_CLAYMORE",
+      "name": "Dark Claymore",
+      "weapon_type": "LONGSWORD",
+      "rarity": "LEGENDARY",
+      "damage": 500,
+      "strength": 100,
+      "ability": null
+    },
+    {
+      "id": "INK_WAND",
+      "name": "Ink Wand",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 130,
+      "strength": 90,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "EXPLOSIVE_BOW",
+      "name": "Explosive Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 100,
+      "strength": 20,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "SPIDER_QUEENS_STINGER",
+      "name": "Spider Queen's Stinger",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 360,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "FLORID_ZOMBIE_SWORD",
+      "name": "Florid Zombie Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 150,
+      "strength": 80,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ZOMBIE_SWORD",
+      "name": "Zombie Sword",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 100,
+      "strength": 50,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "BURSTFIRE_DAGGER",
+      "name": "Kindlebane Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 130,
+      "strength": 55,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "BURSTMAW_DAGGER",
+      "name": "Mawdredge Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 130,
+      "strength": 55,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "MAWDUST_DAGGER",
+      "name": "Twilight Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 90,
+      "strength": 45,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "FIREDUST_DAGGER",
+      "name": "Firedust Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 90,
+      "strength": 45,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "HEARTMAW_DAGGER",
+      "name": "Deathripper Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 160,
+      "strength": 75,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "HEARTFIRE_DAGGER",
+      "name": "Pyrochaos Dagger",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 160,
+      "strength": 75,
+      "ability": ["Right click", "Passive"]
+    },
+    {
+      "id": "ASPECT_OF_THE_VOID",
+      "name": "Aspect of the Void",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "TERMINATOR",
+      "name": "Terminator",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 310,
+      "strength": 50,
+      "ability": ["Left click"]
+    },
+    {
+      "id": "SINSEEKER_SCYTHE",
+      "name": "§4Sin§5seeker Scythe",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 100,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "JUJU_SHORTBOW",
+      "name": "Juju Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 310,
+      "strength": 40,
+      "ability": null
+    },
+    {
+      "id": "VOIDEDGE_KATANA",
+      "name": "Voidedge Katana",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 155,
+      "strength": 60,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "VORPAL_KATANA",
+      "name": "Vorpal Katana",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 190,
+      "strength": 80,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "VOIDWALKER_KATANA",
+      "name": "Voidwalker Katana",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 105,
+      "strength": 40,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "ATOMSPLIT_KATANA",
+      "name": "Atomsplit Katana",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 305,
+      "strength": 100,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "SCORPION_FOIL",
+      "name": "Scorpion Foil",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 60,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "STING",
+      "name": "Sting",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 150,
+      "strength": 75,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "TARANTULA_FANG",
+      "name": "Tarantula Fang",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 90,
+      "strength": 45,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "MOSQUITO_BOW",
+      "name": "Mosquito Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "LEGENDARY",
+      "damage": 251,
+      "strength": 151,
+      "ability": ["Left click", "Passive"]
+    },
+    {
+      "id": "SCORPION_BOW",
+      "name": "Spider Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 50,
+      "strength": 25,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "RECLUSE_FANG",
+      "name": "Recluse Fang",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 60,
+      "strength": 30,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "AXE_OF_THE_SHREDDED",
+      "name": "Halberd of the Shredded",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 140,
+      "strength": 115,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "REVENANT_SWORD",
+      "name": "Revenant Falchion",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 90,
+      "strength": 50,
+      "ability": null
+    },
+    {
+      "id": "REAPER_SWORD",
+      "name": "Reaper Falchion",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 100,
+      "ability": null
+    },
+    {
+      "id": "REAPER_SCYTHE",
+      "name": "Reaper Scythe",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 333,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "SHAMAN_SWORD",
+      "name": "Shaman Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 100,
+      "strength": 20,
+      "ability": null
+    },
+    {
+      "id": "EDIBLE_MACE",
+      "name": "Edible Mace",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 125,
+      "strength": 25,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "POOCH_SWORD",
+      "name": "Pooch Sword",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 120,
+      "strength": 20,
+      "ability": null
+    },
+    {
+      "id": "FROZEN_SCYTHE",
+      "name": "Frozen Scythe",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 80,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "GLACIAL_SCYTHE",
+      "name": "Glacial Scythe",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "VOID_SWORD",
+      "name": "Void Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 125,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "DRAGON_SHORTBOW",
+      "name": "Dragon Shortbow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 40,
+      "ability": ["Passive"]
+    },
+    {
+      "id": "END_STONE_SWORD",
+      "name": "End Stone Sword",
+      "weapon_type": "SWORD",
+      "rarity": "EPIC",
+      "damage": 120,
+      "strength": 80,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "END_SWORD",
+      "name": "End Sword",
+      "weapon_type": "SWORD",
+      "rarity": "UNCOMMON",
+      "damage": 35,
+      "strength": 0,
+      "ability": null
+    },
+    {
+      "id": "END_STONE_BOW",
+      "name": "End Stone Bow",
+      "weapon_type": "BOW",
+      "rarity": "EPIC",
+      "damage": 140,
+      "strength": 0,
+      "ability": ["Left click"]
+    },
+    {
+      "id": "ENDER_BOW",
+      "name": "Ender Bow",
+      "weapon_type": "BOW",
+      "rarity": "RARE",
+      "damage": 60,
+      "strength": 0,
+      "ability": ["Left click"]
+    },
+    {
+      "id": "BONE_REAVER",
+      "name": "Bone Reaver",
+      "weapon_type": "LONGSWORD",
+      "rarity": "EPIC",
+      "damage": 235,
+      "strength": 90,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "FELTHORN_REAPER",
+      "name": "Felthorn Reaper",
+      "weapon_type": "LONGSWORD",
+      "rarity": "LEGENDARY",
+      "damage": 275,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "BOUQUET_OF_LIES",
+      "name": "Bouquet of Lies",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 220,
+      "strength": 300,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "BONZO_STAFF",
+      "name": "Bonzo's Staff",
+      "weapon_type": "SWORD",
+      "rarity": "RARE",
+      "damage": 160,
+      "strength": 0,
+      "ability": ["Right click"]
+    },
+    {
+      "id": "TORMENTOR",
+      "name": "Tormentor",
+      "weapon_type": "SWORD",
+      "rarity": "LEGENDARY",
+      "damage": 525,
+      "strength": 0,
+      "ability": ["Passive"]
+    }
+  ]
+}
