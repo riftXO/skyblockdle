@@ -18,16 +18,29 @@ function getTodayString() {
     
     const today = getTodayString();
     const lastPlayed = localStorage.getItem("skyblockdle_last_played");
+    localStorage.removeItem("skyblockdle_last_played");
+
+    if(lastPlayed !== today){
+        localStorage.removeItem("skyblockdle_guesses");
+        localStorage.removeItem("skyblockdle_shareRows");
+    }
+
     if (lastPlayed === today) {
         document.addEventListener("DOMContentLoaded", () => {
             document.getElementById("guessInput").disabled = true;
             document.getElementById("guessBtn").disabled = true;
             document.getElementById("alert").innerHTML = "Come back tomorrow!";
+            
         });
-    } else {
-        localStorage.removeItem("skyblockdle_last_played");
     }
 })();
+
+let guessedItems = [];
+let shareRows = [];
+let messageTimeout = null
+const START_DATE = "2025-11-26";
+
+
 fetch("js/weaponsList.json")
   .then(res => res.json())
   .then(data => {
@@ -39,11 +52,6 @@ fetch("js/weaponsList.json")
     let grid = document.getElementById('grid');
     grid.className = "grid";
     let alertBox = document.getElementById("alert");
-    let guessedItems = [];
-    let shareRows = [];
-    let messageTimeout = null
-
-    const START_DATE = "2025-11-26";
 
     function getDayNumber() {
     const start = new Date(START_DATE);
@@ -70,6 +78,7 @@ fetch("js/weaponsList.json")
     }
 
     const savedGuesses = JSON.parse(localStorage.getItem("skyblockdle_guesses") || "[]");
+    const savedShareRows = JSON.parse(localStorage.getItem("skyblockdle_shareRows") || "[]");
 
     if (savedGuesses.length > 0) {
         savedGuesses.forEach(name => {
@@ -79,6 +88,8 @@ fetch("js/weaponsList.json")
                 addGrid([foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability]);
             }
         });
+        shareRows = savedShareRows;
+        showShareButton(guessedItems.length);
     }
 
     async function checkAnswer(){
@@ -235,6 +246,7 @@ fetch("js/weaponsList.json")
 
         });
         shareRows.push(buildShareRow(rowResults));
+        localStorage.setItem("skyblockdle_shareRows", JSON.stringify(shareRows));
     }
 
     function checkBg(cell, index, itemData, itemAns){
