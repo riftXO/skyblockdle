@@ -4,12 +4,28 @@ function seededRandom(seed) {
 }
 
 function getDailyIndex(arrayLength) {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = getTodayString();
     const seed = Number(today.replace(/-/g, ""));
     const random = seededRandom(seed);
     return Math.floor(random * arrayLength);
 }
 
+function getTodayString() {
+    return new Date().toISOString().slice(0, 10);
+}
+
+(function applyDailyLockout() {
+    const today = getTodayString();
+    const lastPlayed = localStorage.getItem("skyblockdle_last_played");
+
+    if (lastPlayed === today) {
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("guessInput").disabled = true;
+            document.getElementById("guessBtn").disabled = true;
+            document.getElementById("alert").innerHTML = "Come back tomorrow!";
+        });
+    }
+})();
 fetch("js/weaponsList.json")
   .then(res => res.json())
   .then(data => {
@@ -73,6 +89,8 @@ fetch("js/weaponsList.json")
                 document.getElementById("guessBtn").disabled = true;
                 document.getElementById("guessInput").disabled = true;
                 document.getElementById("guessInput").placeholder = "Yay!";
+
+                localStorage.setItem("skyblockdle_last_played", getTodayString());
 
                 showShareButton(guessedItems.length);
             }
