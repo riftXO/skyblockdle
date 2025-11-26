@@ -113,7 +113,7 @@ if (savedGuesses.length > 0) {
                 if (!localStorage.getItem("skyblockdle_last_played")) {
                     localStorage.setItem("skyblockdle_last_played", getTodayString());
                 }
-                
+
                 alertBox.innerHTML = "&nbsp;"
                 document.getElementById("guessInput").value = "";
                 addGrid(itemData);
@@ -287,9 +287,9 @@ if (savedGuesses.length > 0) {
             const day = getDayNumber();
             let text = "";
             if(attempts <= 1){
-                text = shareRows.join("\n") +`\nSkyblockdle #${day} first try!`
+                text = `\nSkyblockdle #${day} first try!`+shareRows.join("\n") + "\n<https://skyblockle.vercel.app/>"
             } else {
-                text = shareRows.join("\n") +`\nSkyblockdle #${day} in ${attempts} tries` 
+                text = `\nSkyblockdle #${day} in ${attempts} tries` +shareRows.join("\n") + "\n<https://skyblockle.vercel.app/>"
             }
 
             navigator.clipboard.writeText(text).then(() => {
