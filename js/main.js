@@ -19,7 +19,7 @@ function getTodayString() {
     const today = getTodayString();
     const lastPlayed = localStorage.getItem("skyblockdle_last_played");
 
-    if(lastPlayed !== today){
+    if(lastPlayed && lastPlayed !== today){
         localStorage.removeItem("skyblockdle_guesses");
         localStorage.removeItem("skyblockdle_shareRows");
         localStorage.removeItem("skyblockdle_last_played");
