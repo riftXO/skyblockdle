@@ -344,25 +344,37 @@ a{
 
   #grid {
     display: grid;
-    grid-template-columns: repeat(6, minmax(130px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     padding-bottom: 10px;
   }
 
   .cell {
-    width: 130px;
-    height: 65px;
-    font-size: 15px;
+    height: auto;
+    width: auto;
+    font-size: 12px;
     padding: 4px;
   }
 
+  .cell.title {
+    height: 20px;
+    width: auto;
+    font-size: 8px;
+    border-radius: 5px;
+  }
+
+   .cell.title::before {
+    inset: 1px;
+    border-radius: 4px;
+  }
+  
   .cell img{
-    height: 50px;
+    height: 30px;
   }
   
   .cell.title img {
-    height: 16px;
+    height: 5px;
   }
 
   .modal__window {
@@ -385,13 +397,5 @@ a{
   #abil {
     word-wrap: break-word;
     white-space: normal;
-  }
-}
-
-@media (max-width: 400px) {
-  .cell {
-    width: 110px;
-    height: 60px;
-    font-size: 13px;
   }
 }
