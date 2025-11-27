@@ -61,7 +61,6 @@ function loadPracticeGame(itemsGiven) {
     
     itemAns = itemsGiven[randomIndex];
     ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability];
-    (console.log(ansData))
     
     guessedItems = [];
     shareRows = [];
