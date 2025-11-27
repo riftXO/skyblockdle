@@ -236,7 +236,7 @@ ul{
   align-items: center;
 }
 
-#shareBtn{
+#shareBtn, #practiceBtn {
   margin-left: 20px;
   cursor: pointer;
   text-decoration: underline;

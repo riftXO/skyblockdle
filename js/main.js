@@ -1,3 +1,18 @@
+// Globals
+
+let gameMode = "daily";
+let itemAns = null;
+let ansData = null;
+let guessedItems = []; //
+let shareRows = [];
+let messageTimeout = null
+const START_DATE = "2025-11-26";
+let grid = document.getElementById('grid');
+grid.className = "grid";
+let alertBox = document.getElementById("alert");
+
+let practiceActive = false;
+
 function seededRandom(seed) {
     let x = Math.sin(seed) * 10000;
     return x - Math.floor(x);
@@ -14,52 +29,99 @@ function getTodayString() {
     return new Date().toISOString().slice(0, 10);
 }
 
-(function applyDailyLockout() {
+
+
+function startGame(mode) {
+    gameMode = mode;
     
-    const today = getTodayString();
-    const lastPlayed = localStorage.getItem("skyblockdle_last_played");
-
-    if(lastPlayed && lastPlayed !== today){
-        localStorage.removeItem("skyblockdle_guesses");
-        localStorage.removeItem("skyblockdle_shareRows");
-        localStorage.removeItem("skyblockdle_last_played");
+    guessedItems = [];
+    shareRows = [];
+    grid.innerHTML = "";
+    alertBox.innerHTML = "&nbsp;";
+    guessInput.disabled = false;
+    guessBtn.disabled = false;
+    
+    if (mode === "daily") {
+        loadDailyGame();
+    } else {
+        loadPracticeGame();
     }
+}
 
-    function disableInputs() {
-        const gi = document.getElementById("guessInput");
-        const gb = document.getElementById("guessBtn");
-        const al = document.getElementById("alert");
-        if (gi) gi.disabled = true;
-        if (gb) gb.disabled = true;
-        if (al) al.innerHTML = "Come back tomorrow!";
-    }
 
-    if (lastPlayed === today) {
-        if (document.readyState === "loading") {
-            document.addEventListener("DOMContentLoaded", disableInputs);
-        } else {
-            disableInputs();
-        }
-    }
-})();
+function loadPracticeGame(itemsGiven) {
+    practiceActive = true;
+    document.getElementById("guessInput").placeholder = "Enter guess";
+    document.getElementById("guessBtn").disabled = false;
+    document.getElementById("guessInput").disabled = false;
+    alertBox.innerHTML = "&nbsp;";
+    
+    // random index
+    const randomIndex = Math.floor(Math.random() * itemsGiven.length);
+    
+    itemAns = itemsGiven[randomIndex];
+    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability];
+    (console.log(ansData))
+    
+    guessedItems = [];
+    shareRows = [];
+    
+    const cells = grid.querySelectorAll(".cell:not(.title)");
+    cells.forEach(cell => cell.remove());
+    
+    guessInput.disabled = false;
+    guessBtn.disabled = false;
+    document.getElementById("practiceBtn").style.display = "none";
+    document.getElementById("shareBtn").style.display = "none";
+}
 
-let guessedItems = [];
-let shareRows = [];
-let messageTimeout = null
-const START_DATE = "2025-11-26";
+
 
 
 fetch("js/weaponsList.json")
-  .then(res => res.json())
-  .then(data => {
+.then(res => res.json())
+.then(data => {
     const itemsGiven = data.items;
     const index = getDailyIndex(itemsGiven.length);
-    let itemAns = itemsGiven[index];
-    let ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability]
+    itemAns = itemsGiven[index];
+    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability];
+    
+    (function applyDailyLockout() {
+        
+        const today = getTodayString();
+        const lastPlayed = localStorage.getItem("skyblockdle_last_played");
+    
+        if(lastPlayed && lastPlayed !== today){
+            localStorage.removeItem("skyblockdle_guesses");
+            localStorage.removeItem("skyblockdle_shareRows");
+            localStorage.removeItem("skyblockdle_last_played");
+        }
+    
+        function disableInputs() {
+            const gi = document.getElementById("guessInput");
+            const gb = document.getElementById("guessBtn");
+            const al = document.getElementById("alert");
+            if (gi) gi.disabled = true;
+            if (gb) gb.disabled = true;
+            if (al) al.innerHTML = "Come back tomorrow!";
+            const pb = document.getElementById("practiceBtn");
+            pb.style.display = "inline-block";
+            pb.onclick = () => {
+                console.log("Loading practice mode");
+                loadPracticeGame(itemsGiven);
+            };
+            
+        }
+    
+        if (lastPlayed === today) {
+            if (document.readyState === "loading") {
+                document.addEventListener("DOMContentLoaded", disableInputs);
+            } else {
+                disableInputs();
+            }
+        }
+    })();
 
-    let grid = document.getElementById('grid');
-    grid.className = "grid";
-    let alertBox = document.getElementById("alert");
 
     function getDayNumber() {
     const start = new Date(START_DATE);
@@ -71,6 +133,7 @@ fetch("js/weaponsList.json")
 
     function tempMessage(text, ms = 2000) {
         alertBox.innerHTML = text;
+        alertBox.style = "color: #FF5555; text-shadow: 3px 3px 0px #3f1515;"
 
         if (messageTimeout) clearTimeout(messageTimeout);
 
@@ -117,7 +180,9 @@ if (savedGuesses.length > 0) {
                 return;
             } else{
                 guessedItems.push(foundItem)
-                localStorage.setItem("skyblockdle_guesses", JSON.stringify(guessedItems.map(i => i.name)));
+                if (!practiceActive) {
+                    localStorage.setItem("skyblockdle_guesses", JSON.stringify(guessedItems.map(i => i.name)));
+                }
 
 
                 alertBox.innerHTML = "&nbsp;"
@@ -128,6 +193,7 @@ if (savedGuesses.length > 0) {
             
 
             if(foundItem.name === itemAns.name){
+                if (!practiceActive) {
                 alertBox.innerHTML = "You won!"
                 alertBox.style = "color: #00AA00; text-shadow: 3px 3px 0px #004200ff;"
                 document.getElementById("guessInput").value = "";
@@ -138,6 +204,23 @@ if (savedGuesses.length > 0) {
                 localStorage.setItem("skyblockdle_last_played", getTodayString());
 
                 showShareButton(guessedItems.length);
+                
+                const pb = document.getElementById("practiceBtn");
+                pb.style.display = "inline-block";
+                pb.onclick = () => {
+                    console.log("Loading practice mode");
+                    loadPracticeGame(itemsGiven);
+                };
+                } else{
+                    alertBox.innerHTML = "Good job!";
+                    alertBox.style = "color: #00AA00; text-shadow: 3px 3px 0px #004200ff;"
+                    const pb = document.getElementById("practiceBtn");
+                    pb.style.display = "inline-block";
+                    pb.onclick = () => {
+                        console.log("Loading practice mode");
+                        loadPracticeGame(itemsGiven);
+                    };
+                }
             }
         }else{
             tempMessage("Item not found");
@@ -266,7 +349,9 @@ if (savedGuesses.length > 0) {
         });
         if(!isRestore) {
             shareRows.push(buildShareRow(rowResults));
-            localStorage.setItem("skyblockdle_shareRows", JSON.stringify(shareRows));
+            if (!practiceActive) {
+                localStorage.setItem("skyblockdle_shareRows", JSON.stringify(shareRows));
+            };
         }
     }
 
