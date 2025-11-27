@@ -325,7 +325,7 @@ a{
   }
 
   #guessInput {
-    width: 90%;
+    width:auto;
     font-size: 18px;
   }
 
@@ -375,7 +375,7 @@ a{
   }
   
   .cell.title img {
-    height: 5px;
+    height: 8px;
   }
 
   .modal__window {
@@ -399,4 +399,18 @@ a{
     word-wrap: break-word;
     white-space: normal;
   }
+
+  #item,
+  #tier,
+  #type,
+  #dmg,
+  #str,
+  #abil {
+    text-shadow: 2px 2px 0px #2a2a2a;
+  }
+
+  #alert {
+    text-shadow: 2px 2px 0px #3f1515;
+  }
+
 }
