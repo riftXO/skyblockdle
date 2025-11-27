@@ -458,6 +458,17 @@ setInterval(() => {
   scramble(document.getElementById("o2"));
 }, 10);
 
+
+//first time popup
+const modalShown = localStorage.getItem("modalShown");
+
+if (!modalShown) {
+    const modal = document.getElementById("info");
+    modal.style.visibility = "visible"; 
+
+    localStorage.setItem("modalShown", "true");
+}
+
 document.getElementById("infoM").addEventListener("click", () => {
     document.getElementById("info").style.visibility = "visible";
 });
