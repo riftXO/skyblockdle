@@ -240,6 +240,7 @@ ul{
   margin-left: 20px;
   cursor: pointer;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 #info {
@@ -295,6 +296,7 @@ a{
 #infoM{
   cursor: pointer;
   text-decoration: underline;
+  font-size: 20px;
 }
 
 @media (max-width: 600px) {
