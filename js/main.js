@@ -232,7 +232,7 @@ if (savedGuesses.length > 0) {
     let suggestionIndex = -1;
     
 
-
+//autocomplete
     guessInput.addEventListener("input", () => {
         const value = guessInput.value.toLowerCase();
         suggestionsBox.innerHTML = "";
@@ -244,7 +244,7 @@ if (savedGuesses.length > 0) {
         }
 
         const matches = itemsGiven
-            .filter(item => item.name.toLowerCase().startsWith(value))
+            .filter(item => item.name.toLowerCase().includes(value))
             .slice(0, 10);
 
         if (matches.length === 0) {
