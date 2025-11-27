@@ -864,7 +864,7 @@
       "rarity": "UNCOMMON",
       "damage": 105,
       "strength": 40,
-      "ability": ["Right click"]
+      "ability": null
     },
     {
       "id": "ATOMSPLIT_KATANA",
