@@ -106,6 +106,10 @@ if (savedGuesses.length > 0) {
     async function checkAnswer(){
         let guess = document.getElementById("guessInput").value
         let foundItem = itemsGiven.find(e => e.name.toLowerCase() === guess.toLowerCase());
+        if(guess.toLowerCase() == "cowshed"){
+            tempMessage("Moo! 🐮")
+            return;
+        }
         if(foundItem){
             let itemData = [foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability];
             if(guessedItems.includes(foundItem)){
@@ -120,6 +124,8 @@ if (savedGuesses.length > 0) {
                 document.getElementById("guessInput").value = "";
                 addGrid(itemData);
             }
+
+            
 
             if(foundItem.name === itemAns.name){
                 alertBox.innerHTML = "You won!"
