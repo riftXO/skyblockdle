@@ -403,12 +403,12 @@ a{
   #item,
   #tier,
   #type,
-  #dmg,
-  #str,
   #abil {
     text-shadow: 2px 2px 0px #2a2a2a;
   }
 
+  #dmg,
+  #str,
   #alert {
     text-shadow: 2px 2px 0px #3f1515;
   }
