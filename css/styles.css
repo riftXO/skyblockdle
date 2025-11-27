@@ -6,6 +6,10 @@
   font-family: "Monocraft";
   src: url("../font/Monocraft-SemiBold.otf");
 }
+@font-face {
+  font-family: "Monocraft-Bold";
+  src: url("../font/Minecraft-Bold.otf");
+}
 
 *{
   -webkit-font-smoothing: subpixel-antialiased; /* Chrome, Safari, Opera */
@@ -24,6 +28,10 @@ body {
 }
 .obf, .arrow{
   font-family: "Monocraft";
+}
+
+.bold{
+  font-family: "Monocraft-Bold";
 }
 
 ul{
