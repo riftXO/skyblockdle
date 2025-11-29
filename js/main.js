@@ -90,11 +90,13 @@ fetch("js/weaponsList.json")
         
         const today = getTodayString();
         const lastPlayed = localStorage.getItem("skyblockdle_last_played");
+        const guessesDate = localStorage.getItem("skyblockdle_guesses_date");
     
-        if(lastPlayed && lastPlayed !== today){
-            localStorage.removeItem("skyblockdle_guesses");
+        if ((lastPlayed && lastPlayed !== today) || (guessesDate && guessesDate !== today)) {
+        localStorage.removeItem("skyblockdle_guesses");
             localStorage.removeItem("skyblockdle_shareRows");
             localStorage.removeItem("skyblockdle_last_played");
+            localStorage.removeItem("skyblockdle_guesses_date");
         }
     
         function disableInputs() {
@@ -153,19 +155,24 @@ fetch("js/weaponsList.json")
 const savedGuesses = JSON.parse(localStorage.getItem("skyblockdle_guesses") || "[]");
 shareRows = JSON.parse(localStorage.getItem("skyblockdle_shareRows") || "[]");
 const restoredLastPlayed = localStorage.getItem("skyblockdle_last_played");
+const savedGuessesDate = localStorage.getItem("skyblockdle_guesses_date");
 
-if (savedGuesses.length > 0) {
+if (savedGuessesDate === getTodayString() && savedGuesses.length > 0) {
     savedGuesses.forEach(name => {
-        const foundItem = itemsGiven.find(e => e.name === name);
-        if (foundItem) {
-            guessedItems.push(foundItem);
-            addGrid([foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability, foundItem.material], true);
-        }
+    const foundItem = itemsGiven.find(e => e.name === name);
+    if (foundItem) {
+        guessedItems.push(foundItem);
+        addGrid([foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability, foundItem.material], true);
+    }
     });
 
     if (restoredLastPlayed === getTodayString()) {
     showShareButton(guessedItems.length);
     }
+} else {
+    localStorage.removeItem("skyblockdle_guesses");
+    localStorage.removeItem("skyblockdle_shareRows");
+    localStorage.removeItem("skyblockdle_guesses_date");
 }
 
     async function checkAnswer(){
@@ -188,6 +195,7 @@ if (savedGuesses.length > 0) {
                 guessedItems.push(foundItem)
                 if (!practiceActive) {
                     localStorage.setItem("skyblockdle_guesses", JSON.stringify(guessedItems.map(i => i.name)));
+                    localStorage.setItem("skyblockdle_guesses_date", getTodayString());
                 }
 
 
