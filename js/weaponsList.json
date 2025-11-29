@@ -42,16 +42,6 @@
       "material": "WOOD_SWORD"
     },
     {
-      "id": "DAEDALUS_AXE",
-      "name": "Daedalus Blade",
-      "weapon_type": "SWORD",
-      "rarity": "LEGENDARY",
-      "damage": 232,
-      "strength": 0,
-      "ability": [],
-      "material": "GOLD_SWORD"
-    },
-    {
       "id": "SWORD_OF_REVELATIONS",
       "name": "Sword of Revelations",
       "weapon_type": "SWORD",
