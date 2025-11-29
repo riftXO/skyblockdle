@@ -12,7 +12,7 @@ grid.className = "grid";
 let alertBox = document.getElementById("alert");
 let practiceActive = false;
 
-let hplus = false;
+let hplus = document.getElementById("hpluscheck").checked;
 
 function seededRandom(seed) {
     let x = Math.sin(seed) * 10000;
