@@ -20,10 +20,8 @@
 body {
   margin: 0;
   font-family: "Minecraft";
-  display: flex;
-  justify-content: center;
+  text-align: center;
   min-height: 100vh;
-  position: relative;
   overflow: auto;
 }
 .obf, .arrow{
@@ -121,17 +119,16 @@ ul{
   text-shadow: 3px 3px 0px #3f1515;
 }
 
-.grid {
+#grid {
   display: grid;
   grid-template-columns: repeat(6, 180px);
   gap: 5px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   width: fit-content;
 }
 
 .cell {
   width: 180px;
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,13 +137,31 @@ ul{
   opacity: 0;
   transform: scale(0.8);
   animation: reveal 0.35s ease-out forwards;
+  margin: 2px 0 2px 0;
 }
 
 .cell.title {
-    animation: none !important;
-    opacity: 1;
-    transform: none;
+  animation: none !important;
+  opacity: 1;
+  transform: none;
+  background: #120312;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  image-rendering: auto;
+  border: 0px;
+  height: 60px;
 }
+
+.cell.title::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 2px solid #2a085f;
+  border-radius: 7px;
+  pointer-events: none;
+}
+
 @keyframes reveal {
   to {
     opacity: 1;
@@ -154,8 +169,51 @@ ul{
   }
 }
 
-.container {
-  width: 1000px;
+.cell:not(.title){
+  padding: 3px 0 3px 0;
+  height: 80px;
+}
+
+.cell .imgCell {
+  position: relative;
+  background: #120312;;
+  border-radius: 10px;
+  overflow: hidden;
+  image-rendering: crisp-edges;
+  border: 0;
+  padding: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: clamp(8px, 4vw, 12px);
+  min-width: 0;
+}
+
+.cell .imgCell::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 2px solid #2a085f;
+  border-radius: 7px;
+  pointer-events: none;
+}
+
+.cell .imgCell > div {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .correct {
@@ -184,26 +242,7 @@ ul{
   color: #d6414d;
 }
 
-.cell.title {
-  background: #120312;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  image-rendering: auto;
-  border: 0px;
-  height: 60px
-}
-
-.cell.title::before {
-  content: "";
-  position: absolute;
-  inset: 2px;
-  border: 2px solid #2a085f;
-  border-radius: 7px;
-  pointer-events: none;
-}
-
-.cell img {
+.cell img:not(.imgCell img) {
   filter: drop-shadow(0 0 5px rgb(49, 49, 49));
 
   image-rendering: optimizeSpeed;             /* older name */
@@ -325,6 +364,69 @@ a{
   text-decoration: underline;
   font-size: 20px;
 }
+
+.switch-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 22px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
 
 @media (max-width: 600px) {
 

@@ -10,8 +10,9 @@ const START_DATE = "2025-11-26";
 let grid = document.getElementById('grid');
 grid.className = "grid";
 let alertBox = document.getElementById("alert");
-
 let practiceActive = false;
+
+let hplus = false;
 
 function seededRandom(seed) {
     let x = Math.sin(seed) * 10000;
@@ -60,7 +61,7 @@ function loadPracticeGame(itemsGiven) {
     const randomIndex = Math.floor(Math.random() * itemsGiven.length);
     
     itemAns = itemsGiven[randomIndex];
-    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability];
+    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability, itemAns.material];
     
     guessedItems = [];
     shareRows = [];
@@ -83,7 +84,7 @@ fetch("js/weaponsList.json")
     const itemsGiven = data.items;
     const index = getDailyIndex(itemsGiven.length);
     itemAns = itemsGiven[index];
-    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability];
+    ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability, itemAns.material];
     
     (function applyDailyLockout() {
         
@@ -142,7 +143,9 @@ fetch("js/weaponsList.json")
     function buildShareRow(cellResults) {
         return cellResults.map(res => {
             if (res === "correct") return "🟩";
-            if (res === "present") return "🟨";
+            if (res === "won") return "✅";
+            if (res === "present") return "🟥";
+            if (res === "lost") return "❌";
             return "🟥";
         }).join("");
     }
@@ -156,7 +159,7 @@ if (savedGuesses.length > 0) {
         const foundItem = itemsGiven.find(e => e.name === name);
         if (foundItem) {
             guessedItems.push(foundItem);
-            addGrid([foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability], true);
+            addGrid([foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability, foundItem.material], true);
         }
     });
 
@@ -177,7 +180,7 @@ if (savedGuesses.length > 0) {
             return;
         }
         if(foundItem){
-            let itemData = [foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability];
+            let itemData = [foundItem.name, foundItem.id, foundItem.damage, foundItem.strength, foundItem.rarity, foundItem.weapon_type, foundItem.ability, foundItem.material];
             if(guessedItems.includes(foundItem)){
                 tempMessage("You already tried that item!")
                 return;
@@ -331,6 +334,23 @@ if (savedGuesses.length > 0) {
         }
     });
 
+    document.getElementById("hpluscheck").addEventListener("change", (e) => {
+        hplus = e.target.checked;
+        console.log("Hypixel+ mode:", hplus);
+        
+        const imgCells = document.querySelectorAll(".imgCell img");
+        imgCells.forEach(img => {
+            const itemId = img.getAttribute("data-id");
+            const material = img.getAttribute("data-material");
+            
+            if (hplus) {
+                img.src = `img/${itemId.toLowerCase()}.png`;
+            } else {
+                img.src = `img/vanilla/${material.toLowerCase()}.png`;
+            }
+        });
+    });
+
     function addGrid(itemData, isRestore = false) {
         const ROW_STAGGER_MS = 0;
         const CELL_OFFSET_MS = 300;
@@ -342,31 +362,46 @@ if (savedGuesses.length > 0) {
         let rowResults = [];
         let displayIndex = 0;
         itemData.forEach((element, index) => {
+
+        if (index === 1) {
+            return;
+        }
+        if (index === 7) {
+            return;
+        }
             const cell = document.createElement('div');
             cell.className = "cell";
 
             if(Array.isArray(element)){
-                cell.innerHTML = element.join("<br>")
-            } else if (element === null){
-                cell.innerHTML = "No ability";
+                if (element.length === 0) {
+                    cell.textContent = "No ability";
+                } else {
+                    cell.innerHTML = element.join("<br>");
+                }
             } else if (element === itemData[2] || element === itemData[3]){
                 cell.innerHTML = element
                 if(element < ansData[index]){
-                    cell.innerHTML += "<span class='arrow'>↑</span>"
+                    cell.innerHTML += " <span class='arrow'>↑</span>"
                 } else if(element > ansData[index]){
-                    cell.innerHTML += "<span class='arrow'>↓</span>"
+                    cell.innerHTML += " <span class='arrow'>↓</span>"
                 }
             }else if (element === itemData[0]){
-                cell.innerHTML = `<img src='img/${itemData[1].toLowerCase()}.png' alt='${itemData[0]}' title='${itemData[0]}' height='65'>`;
-            }else if (element === itemData[1]){
-                //skip id
-                return;
+                let parsedName = itemData[0];
+                if(element == "Aspect of the Jerry, Signature Edition"){
+                    parsedName = "AOTJ, Signature Edition"
+                } else if (element == "§4Sin§5seeker Scythe"){
+                    parsedName = "Sinseeker Scythe"
+                }
+                const imgSrc = hplus ? `img/${itemData[1].toLowerCase()}.png` : `img/vanilla/${itemData[7].toLowerCase()}.png`;
+                cell.innerHTML = `<div class="imgCell"><img src='${imgSrc}' alt='${parsedName}' data-id='${itemData[1]}' data-material='${itemData[7]}' title='${parsedName}' height='55px'><div>${parsedName}</div></div>`;
             }else{
                 cell.innerHTML = element
             }
 
-            let result = checkBg(cell, index, element, ansData)
-            if (index > 0) rowResults.push(result);
+        let result = checkBg(cell, index, element, ansData);
+
+            //if (index > 0) rowResults.push(result);
+            if (typeof result !== "undefined") rowResults.push(result);
             
             if (!cell.classList.contains('title')) {
                 if (isRestore) {
@@ -394,6 +429,9 @@ if (savedGuesses.length > 0) {
 
     function checkBg(cell, index, itemData, itemAns){
         let answerVal = itemAns[index]
+         if (index === 7) {
+            return;
+        } 
         if (Array.isArray(itemData) || Array.isArray(answerVal) || itemData === null || answerVal === null) {
             const color = abilityColor(itemData, answerVal);
             cell.classList.add(color);
@@ -401,9 +439,17 @@ if (savedGuesses.length > 0) {
         }
 
             if(itemData === itemAns[index]){
+                if(index === 0){
+                   cell.classList.add("won");
+                   return "won"
+                }
                 cell.classList.add("correct");
                 return "correct";
             } else {
+                if(index === 0){
+                   cell.classList.add("lost"); 
+                   return "lost"
+                }
                 cell.classList.add("absent");
                 return "absent"
             }

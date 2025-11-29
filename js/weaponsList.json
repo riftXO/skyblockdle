@@ -8,7 +8,8 @@
       "rarity": "EPIC",
       "damage": 90,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "FLAMING_FLAY",
@@ -17,7 +18,8 @@
       "rarity": "LEGENDARY",
       "damage": 200,
       "strength": 250,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "FISHING_ROD"
     },
     {
       "id": "ASPECT_OF_THE_JERRY_SIGNATURE",
@@ -26,7 +28,8 @@
       "rarity": "UNCOMMON",
       "damage": 2,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "GREAT_SPOOK_SWORD",
@@ -35,7 +38,8 @@
       "rarity": "LEGENDARY",
       "damage": 0,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "DAEDALUS_AXE",
@@ -44,7 +48,8 @@
       "rarity": "LEGENDARY",
       "damage": 232,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "SWORD_OF_REVELATIONS",
@@ -53,7 +58,8 @@
       "rarity": "EPIC",
       "damage": 180,
       "strength": 50,
-      "ability": null
+      "ability": [],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "JERRY_STAFF",
@@ -62,7 +68,8 @@
       "rarity": "EPIC",
       "damage": 80,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_BARDING"
     },
     {
       "id": "MIDAS_STAFF",
@@ -71,7 +78,8 @@
       "rarity": "LEGENDARY",
       "damage": 130,
       "strength": 150,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "GOLD_SPADE"
     },
     {
       "id": "ASTRAEA",
@@ -80,7 +88,8 @@
       "rarity": "LEGENDARY",
       "damage": 270,
       "strength": 150,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
       {
       "id": "FANCY_SWORD",
@@ -89,7 +98,8 @@
       "rarity": "COMMON",
       "damage": 20,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "SQUIRE_SWORD",
@@ -98,7 +108,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 10,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "ASPECT_OF_THE_DRAGON",
@@ -107,7 +118,8 @@
       "rarity": "LEGENDARY",
       "damage": 225,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "FLOWER_OF_TRUTH",
@@ -116,7 +128,8 @@
       "rarity": "LEGENDARY",
       "damage": 160,
       "strength": 300,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "RED_ROSE"
     },
     {
       "id": "PRISMARINE_BOW",
@@ -125,7 +138,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 25,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "WITHER_CLOAK",
@@ -134,7 +148,8 @@
       "rarity": "EPIC",
       "damage": 190,
       "strength": 135,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "STONE_SWORD"
     },
     {
       "id": "ASPECT_OF_THE_JERRY",
@@ -143,7 +158,8 @@
       "rarity": "COMMON",
       "damage": 1,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "CLEAVER",
@@ -152,7 +168,8 @@
       "rarity": "UNCOMMON",
       "damage": 40,
       "strength": 10,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "ASPECT_OF_THE_END",
@@ -161,7 +178,8 @@
       "rarity": "RARE",
       "damage": 100,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "BONE_BOOMERANG",
@@ -170,7 +188,8 @@
       "rarity": "LEGENDARY",
       "damage": 270,
       "strength": 130,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "BONE"
     },
     {
       "id": "PRISMARINE_BLADE",
@@ -179,7 +198,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 25,
-      "ability": null
+      "ability": [],
+      "material": "PRISMARINE_SHARD"
     },
     {
       "id": "NECROMANCER_SWORD",
@@ -188,7 +208,8 @@
       "rarity": "LEGENDARY",
       "damage": 250,
       "strength": 125,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "BAT_WAND",
@@ -197,7 +218,8 @@
       "rarity": "LEGENDARY",
       "damage": 180,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "ALLIUM"
 
     },
     {
@@ -207,7 +229,8 @@
       "rarity": "EPIC",
       "damage": 100,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "BLAZE_ROD"
     },
     {
       "id": "EMBER_ROD",
@@ -216,7 +239,8 @@
       "rarity": "EPIC",
       "damage": 80,
       "strength": 35,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "BLAZE_ROD"
     },
     {
       "id": "SULPHUR_BOW",
@@ -225,7 +249,8 @@
       "rarity": "EPIC",
       "damage": 200,
       "strength": 100,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "SHADOW_FURY",
@@ -234,7 +259,8 @@
       "rarity": "LEGENDARY",
       "damage": 300,
       "strength": 130,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "LEAPING_SWORD",
@@ -243,7 +269,8 @@
       "rarity": "EPIC",
       "damage": 150,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "STONE_BLADE",
@@ -252,7 +279,8 @@
       "rarity": "EPIC",
       "damage": 170,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "STONE_SWORD"
     },
     {
       "id": "GHOUL_BUSTER",
@@ -261,7 +289,8 @@
       "rarity": "EPIC",
       "damage": 140,
       "strength": 90,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_HOE"
     },
     {
       "id": "RAGNAROCK_AXE",
@@ -270,7 +299,8 @@
       "rarity": "RARE",
       "damage": 200,
       "strength": 70,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "SUPER_UNDEAD_BOW",
@@ -279,7 +309,8 @@
       "rarity": "EPIC",
       "damage": 220,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "SPIRIT_SWORD",
@@ -288,7 +319,8 @@
       "rarity": "EPIC",
       "damage": 210,
       "strength": 50,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "FEL_SWORD",
@@ -297,7 +329,8 @@
       "rarity": "EPIC",
       "damage": 190,
       "strength": 135,
-      "ability": null
+      "ability": [],
+      "material": "STONE_SWORD"
     },
     {
       "id": "TRIBAL_SPEAR",
@@ -306,7 +339,8 @@
       "rarity": "RARE",
       "damage": 0,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "STICK"
     },
     {
       "id": "RAIDER_AXE",
@@ -315,7 +349,8 @@
       "rarity": "RARE",
       "damage": 80,
       "strength": 50,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "TACTICIAN_SWORD",
@@ -324,7 +359,8 @@
       "rarity": "RARE",
       "damage": 50,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "SLIME_BOW",
@@ -333,7 +369,8 @@
       "rarity": "EPIC",
       "damage": 100,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "WITHER_BOW",
@@ -342,7 +379,8 @@
       "rarity": "UNCOMMON",
       "damage": 30,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "SOULS_REBOUND",
@@ -351,7 +389,8 @@
       "rarity": "EPIC",
       "damage": 450,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "DEATH_BOW",
@@ -360,7 +399,8 @@
       "rarity": "EPIC",
       "damage": 300,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "DECENT_BOW",
@@ -369,7 +409,8 @@
       "rarity": "UNCOMMON",
       "damage": 45,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "HURRICANE_BOW",
@@ -378,7 +419,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 50,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "GIANT_CLEAVER",
@@ -387,7 +429,8 @@
       "rarity": "LEGENDARY",
       "damage": 235,
       "strength": 120,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "LAST_BREATH",
@@ -396,7 +439,8 @@
       "rarity": "LEGENDARY",
       "damage": 200,
       "strength": 180,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "SUPER_CLEAVER",
@@ -405,7 +449,8 @@
       "rarity": "RARE",
       "damage": 105,
       "strength": 20,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "EMERALD_BLADE",
@@ -414,7 +459,8 @@
       "rarity": "EPIC",
       "damage": 130,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "EMERALD"
     },
     {
       "id": "SILK_EDGE_SWORD",
@@ -423,7 +469,8 @@
       "rarity": "LEGENDARY",
       "damage": 175,
       "strength": 125,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "GIANTS_SWORD",
@@ -432,7 +479,8 @@
       "rarity": "LEGENDARY",
       "damage": 500,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "HUNTER_KNIFE",
@@ -441,7 +489,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "HYPERION",
@@ -450,7 +499,8 @@
       "rarity": "LEGENDARY",
       "damage": 260,
       "strength": 150,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "ARTISANAL_SHORTBOW",
@@ -459,7 +509,8 @@
       "rarity": "RARE",
       "damage": 40,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "ORNATE_ZOMBIE_SWORD",
@@ -468,7 +519,8 @@
       "rarity": "EPIC",
       "damage": 110,
       "strength": 60,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "VALKYRIE",
@@ -477,7 +529,8 @@
       "rarity": "LEGENDARY",
       "damage": 270,
       "strength": 145,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "MERCENARY_AXE",
@@ -486,7 +539,8 @@
       "rarity": "RARE",
       "damage": 70,
       "strength": 20,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "FIRE_FREEZE_STAFF",
@@ -495,7 +549,8 @@
       "rarity": "EPIC",
       "damage": 50,
       "strength": 20,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "YELLOW_FLOWER"
     },
     {
       "id": "ITEM_SPIRIT_BOW",
@@ -504,7 +559,8 @@
       "rarity": "LEGENDARY",
       "damage": 210,
       "strength": 100,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "SOUL_WHIP",
@@ -513,7 +569,8 @@
       "rarity": "EPIC",
       "damage": 145,
       "strength": 175,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "FISHING_ROD"
     },
     {
       "id": "SWORD_OF_BAD_HEALTH",
@@ -522,7 +579,8 @@
       "rarity": "UNCOMMON",
       "damage": 200,
       "strength": 50,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "YETI_SWORD",
@@ -531,7 +589,8 @@
       "rarity": "LEGENDARY",
       "damage": 150,
       "strength": 170,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "PIGMAN_SWORD",
@@ -540,7 +599,8 @@
       "rarity": "LEGENDARY",
       "damage": 200,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "RUNIC_STAFF",
@@ -549,7 +609,8 @@
       "rarity": "LEGENDARY",
       "damage": 20,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "BLAZE_ROD"
     },
     {
       "id": "MIDAS_SWORD",
@@ -558,7 +619,8 @@
       "rarity": "LEGENDARY",
       "damage": 170,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "NECRON_BLADE",
@@ -567,7 +629,8 @@
       "rarity": "LEGENDARY",
       "damage": 260,
       "strength": 110,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "BLADE_OF_THE_VOLCANO",
@@ -576,7 +639,8 @@
       "rarity": "RARE",
       "damage": 220,
       "strength": 70,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "SPIDER_SWORD",
@@ -585,7 +649,8 @@
       "rarity": "COMMON",
       "damage": 30,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "SAVANA_BOW",
@@ -594,7 +659,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "GEMSTONE_GAUNTLET",
@@ -603,7 +669,8 @@
       "rarity": "LEGENDARY",
       "damage": 300,
       "strength": 50,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "SKULL_ITEM"
     },
     {
       "id": "RUNAANS_BOW",
@@ -612,7 +679,8 @@
       "rarity": "LEGENDARY",
       "damage": 160,
       "strength": 50,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "ROGUE_SWORD",
@@ -621,7 +689,8 @@
       "rarity": "COMMON",
       "damage": 20,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "FLAMING_SWORD",
@@ -630,7 +699,8 @@
       "rarity": "UNCOMMON",
       "damage": 50,
       "strength": 20,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "SCYLLA",
@@ -639,7 +709,8 @@
       "rarity": "LEGENDARY",
       "damage": 270,
       "strength": 150,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "LIVID_DAGGER",
@@ -648,7 +719,8 @@
       "rarity": "LEGENDARY",
       "damage": 210,
       "strength": 60,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "UNDEAD_SWORD",
@@ -657,7 +729,8 @@
       "rarity": "COMMON",
       "damage": 30,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "VENOMS_TOUCH",
@@ -666,7 +739,8 @@
       "rarity": "EPIC",
       "damage": 250,
       "strength": 100,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "HYPER_CLEAVER",
@@ -675,7 +749,8 @@
       "rarity": "EPIC",
       "damage": 175,
       "strength": 100,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "UNDEAD_BOW",
@@ -684,7 +759,8 @@
       "rarity": "RARE",
       "damage": 80,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "GOLEM_SWORD",
@@ -693,7 +769,8 @@
       "rarity": "RARE",
       "damage": 80,
       "strength": 125,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "DARK_CLAYMORE",
@@ -702,7 +779,8 @@
       "rarity": "LEGENDARY",
       "damage": 500,
       "strength": 100,
-      "ability": null
+      "ability": [],
+      "material": "STONE_SWORD"
     },
     {
       "id": "INK_WAND",
@@ -711,7 +789,8 @@
       "rarity": "EPIC",
       "damage": 130,
       "strength": 90,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "STICK"
     },
     {
       "id": "EXPLOSIVE_BOW",
@@ -720,7 +799,8 @@
       "rarity": "EPIC",
       "damage": 100,
       "strength": 20,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "SPIDER_QUEENS_STINGER",
@@ -729,7 +809,8 @@
       "rarity": "EPIC",
       "damage": 360,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "FLORID_ZOMBIE_SWORD",
@@ -738,7 +819,8 @@
       "rarity": "LEGENDARY",
       "damage": 150,
       "strength": 80,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "ZOMBIE_SWORD",
@@ -747,7 +829,8 @@
       "rarity": "RARE",
       "damage": 100,
       "strength": 50,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "BURSTFIRE_DAGGER",
@@ -756,7 +839,8 @@
       "rarity": "EPIC",
       "damage": 130,
       "strength": 55,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "STONE_SWORD"
     },
     {
       "id": "BURSTMAW_DAGGER",
@@ -765,7 +849,8 @@
       "rarity": "EPIC",
       "damage": 130,
       "strength": 55,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "MAWDUST_DAGGER",
@@ -774,7 +859,8 @@
       "rarity": "RARE",
       "damage": 90,
       "strength": 45,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "FIREDUST_DAGGER",
@@ -783,7 +869,8 @@
       "rarity": "RARE",
       "damage": 90,
       "strength": 45,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "STONE_SWORD"
     },
     {
       "id": "HEARTMAW_DAGGER",
@@ -792,7 +879,8 @@
       "rarity": "LEGENDARY",
       "damage": 160,
       "strength": 75,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "HEARTFIRE_DAGGER",
@@ -801,7 +889,8 @@
       "rarity": "LEGENDARY",
       "damage": 160,
       "strength": 75,
-      "ability": ["Right click", "Passive"]
+      "ability": ["Right click", "Passive"],
+      "material": "STONE_SWORD"
     },
     {
       "id": "ASPECT_OF_THE_VOID",
@@ -810,7 +899,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SPADE"
     },
     {
       "id": "TERMINATOR",
@@ -819,7 +909,8 @@
       "rarity": "LEGENDARY",
       "damage": 310,
       "strength": 50,
-      "ability": ["Left click"]
+      "ability": ["Left click"],
+      "material": "BOW"
     },
     {
       "id": "SINSEEKER_SCYTHE",
@@ -828,7 +919,8 @@
       "rarity": "EPIC",
       "damage": 100,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_HOE"
     },
     {
       "id": "JUJU_SHORTBOW",
@@ -837,7 +929,8 @@
       "rarity": "EPIC",
       "damage": 310,
       "strength": 40,
-      "ability": null
+      "ability": [],
+      "material": "BOW"
     },
     {
       "id": "VOIDEDGE_KATANA",
@@ -846,7 +939,8 @@
       "rarity": "RARE",
       "damage": 155,
       "strength": 60,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "VORPAL_KATANA",
@@ -855,7 +949,8 @@
       "rarity": "EPIC",
       "damage": 190,
       "strength": 80,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "VOIDWALKER_KATANA",
@@ -864,7 +959,8 @@
       "rarity": "UNCOMMON",
       "damage": 105,
       "strength": 40,
-      "ability": null
+      "ability": [],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "ATOMSPLIT_KATANA",
@@ -873,7 +969,8 @@
       "rarity": "LEGENDARY",
       "damage": 305,
       "strength": 100,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "SCORPION_FOIL",
@@ -882,7 +979,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 60,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "WOOD_SWORD"
     },
     {
       "id": "STING",
@@ -891,7 +989,8 @@
       "rarity": "LEGENDARY",
       "damage": 150,
       "strength": 75,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "TARANTULA_FANG",
@@ -900,7 +999,8 @@
       "rarity": "RARE",
       "damage": 90,
       "strength": 45,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "STONE_SWORD"
     },
     {
       "id": "MOSQUITO_BOW",
@@ -909,7 +1009,8 @@
       "rarity": "LEGENDARY",
       "damage": 251,
       "strength": 151,
-      "ability": ["Left click", "Passive"]
+      "ability": ["Left click", "Passive"],
+      "material": "BOW"
     },
     {
       "id": "SCORPION_BOW",
@@ -918,7 +1019,8 @@
       "rarity": "EPIC",
       "damage": 50,
       "strength": 25,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "RECLUSE_FANG",
@@ -927,7 +1029,8 @@
       "rarity": "UNCOMMON",
       "damage": 60,
       "strength": 30,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "AXE_OF_THE_SHREDDED",
@@ -936,7 +1039,8 @@
       "rarity": "LEGENDARY",
       "damage": 140,
       "strength": 115,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "REVENANT_SWORD",
@@ -945,7 +1049,8 @@
       "rarity": "RARE",
       "damage": 90,
       "strength": 50,
-      "ability": null
+      "ability": [],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "REAPER_SWORD",
@@ -954,7 +1059,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 100,
-      "ability": null
+      "ability": [],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "REAPER_SCYTHE",
@@ -963,7 +1069,8 @@
       "rarity": "LEGENDARY",
       "damage": 333,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_HOE"
     },
     {
       "id": "SHAMAN_SWORD",
@@ -972,7 +1079,8 @@
       "rarity": "EPIC",
       "damage": 100,
       "strength": 20,
-      "ability": null
+      "ability": [],
+      "material": "IRON_SWORD"
     },
     {
       "id": "EDIBLE_MACE",
@@ -981,7 +1089,8 @@
       "rarity": "RARE",
       "damage": 125,
       "strength": 25,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "MUTTON"
     },
     {
       "id": "POOCH_SWORD",
@@ -990,7 +1099,8 @@
       "rarity": "LEGENDARY",
       "damage": 120,
       "strength": 20,
-      "ability": null
+      "ability": [],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "FROZEN_SCYTHE",
@@ -999,7 +1109,8 @@
       "rarity": "RARE",
       "damage": 80,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_HOE"
     },
     {
       "id": "GLACIAL_SCYTHE",
@@ -1008,7 +1119,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DIAMOND_HOE"
     },
     {
       "id": "VOID_SWORD",
@@ -1017,7 +1129,8 @@
       "rarity": "EPIC",
       "damage": 125,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "DRAGON_SHORTBOW",
@@ -1026,7 +1139,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 40,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "BOW"
     },
     {
       "id": "END_STONE_SWORD",
@@ -1035,7 +1149,8 @@
       "rarity": "EPIC",
       "damage": 120,
       "strength": 80,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "GOLD_SWORD"
     },
     {
       "id": "END_SWORD",
@@ -1044,7 +1159,8 @@
       "rarity": "UNCOMMON",
       "damage": 35,
       "strength": 0,
-      "ability": null
+      "ability": [],
+      "material": "DIAMOND_SWORD"
     },
     {
       "id": "END_STONE_BOW",
@@ -1053,7 +1169,8 @@
       "rarity": "EPIC",
       "damage": 140,
       "strength": 0,
-      "ability": ["Left click"]
+      "ability": ["Left click"],
+      "material": "BOW"
     },
     {
       "id": "ENDER_BOW",
@@ -1062,7 +1179,8 @@
       "rarity": "RARE",
       "damage": 60,
       "strength": 0,
-      "ability": ["Left click"]
+      "ability": ["Left click"],
+      "material": "BOW"
     },
     {
       "id": "BONE_REAVER",
@@ -1071,7 +1189,8 @@
       "rarity": "EPIC",
       "damage": 235,
       "strength": 90,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "FELTHORN_REAPER",
@@ -1080,7 +1199,8 @@
       "rarity": "LEGENDARY",
       "damage": 275,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "IRON_SWORD"
     },
     {
       "id": "BOUQUET_OF_LIES",
@@ -1089,7 +1209,8 @@
       "rarity": "LEGENDARY",
       "damage": 220,
       "strength": 300,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "DOUBLE_PLANT"
     },
     {
       "id": "BONZO_STAFF",
@@ -1098,7 +1219,8 @@
       "rarity": "RARE",
       "damage": 160,
       "strength": 0,
-      "ability": ["Right click"]
+      "ability": ["Right click"],
+      "material": "BLAZE_ROD"
     },
     {
       "id": "TORMENTOR",
@@ -1107,7 +1229,8 @@
       "rarity": "LEGENDARY",
       "damage": 525,
       "strength": 0,
-      "ability": ["Passive"]
+      "ability": ["Passive"],
+      "material": "IRON_SWORD"
     }
   ]
 }
