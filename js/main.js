@@ -157,7 +157,12 @@ shareRows = JSON.parse(localStorage.getItem("skyblockdle_shareRows") || "[]");
 const restoredLastPlayed = localStorage.getItem("skyblockdle_last_played");
 const savedGuessesDate = localStorage.getItem("skyblockdle_guesses_date");
 
-if (savedGuessesDate === getTodayString() && savedGuesses.length > 0) {
+const todayStr = getTodayString();
+// restore if guesses are from today OR the user already completed today's game
+const shouldRestore = (savedGuessesDate === todayStr && savedGuesses.length > 0)
+                      || (restoredLastPlayed === todayStr && (savedGuesses.length > 0 || shareRows.length > 0));
+
+if (shouldRestore) {
     savedGuesses.forEach(name => {
     const foundItem = itemsGiven.find(e => e.name === name);
     if (foundItem) {
