@@ -243,8 +243,6 @@ ul{
 }
 
 .cell img:not(.imgCell img) {
-  filter: drop-shadow(0 0 5px rgb(49, 49, 49));
-
   image-rendering: optimizeSpeed;             /* older name */
   image-rendering: -moz-crisp-edges;          /* Firefox */
   image-rendering: -o-crisp-edges;            /* Opera */

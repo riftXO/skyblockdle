@@ -237,6 +237,7 @@ if (shouldRestore) {
                     document.getElementById("guessInput").disabled = true;
                     setTimeout(() => {
                         alertBox.innerHTML = "Good job!";
+                        document.getElementById("guessInput").placeholder = "Yay!"
                         alertBox.style = "color: #00AA00; text-shadow: 3px 3px 0px #004200ff;"
                         const pb = document.getElementById("practiceBtn");
                         pb.style.display = "inline-block";
