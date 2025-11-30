@@ -515,7 +515,7 @@ function scramble(el) {
 setInterval(() => {
   scramble(document.getElementById("o1"));
   scramble(document.getElementById("o2"));
-}, 10);
+}, 0);
 
 
 //first time popup

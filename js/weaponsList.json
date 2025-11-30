@@ -32,16 +32,6 @@
       "material": "WOOD_SWORD"
     },
     {
-      "id": "GREAT_SPOOK_SWORD",
-      "name": "Great Spook Sword",
-      "weapon_type": "SWORD",
-      "rarity": "LEGENDARY",
-      "damage": 0,
-      "strength": 0,
-      "ability": ["Passive"],
-      "material": "WOOD_SWORD"
-    },
-    {
       "id": "SWORD_OF_REVELATIONS",
       "name": "Sword of Revelations",
       "weapon_type": "SWORD",
