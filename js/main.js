@@ -472,6 +472,7 @@ if (shouldRestore) {
 
     function checkBg(cell, index, itemData, itemAns){
         let answerVal = itemAns[index]
+        const dataPair = pairOf(itemData);
          if (index === 7) {
             return;
         } 
@@ -481,7 +482,12 @@ if (shouldRestore) {
             return color;
         }
 
-            if(itemData === itemAns[index]){
+        if(dataPair && dataPair === answerVal){
+            cell.classList.add("won");
+            return "won";
+        }
+
+            if(itemData === answerVal){
                 if(index === 0){
                    cell.classList.add("won");
                    return "won"
