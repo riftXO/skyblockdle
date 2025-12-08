@@ -70,8 +70,13 @@ function loadPracticeGame(itemsGiven) {
     
     // random index
     const randomIndex = Math.floor(Math.random() * itemsGiven.length);
+    const groupName = pairOf(itemsGiven[randomIndex].name);
     
-    itemAns = itemsGiven[randomIndex];
+    if (groupName) {
+        itemAns = {...itemsGiven[randomIndex], name: groupName};
+    } else {
+        itemAns = itemsGiven[randomIndex];
+    }
     ansData = [itemAns.name, itemAns.id, itemAns.damage, itemAns.strength, itemAns.rarity, itemAns.weapon_type, itemAns.ability, itemAns.material];
     
     guessedItems = [];
