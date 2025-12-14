@@ -180,6 +180,7 @@ ul{
   background: #120312;;
   border-radius: 10px;
   overflow: hidden;
+  image-rendering: pixelated;
   image-rendering: crisp-edges;
   border: 0;
   padding: 6px;
