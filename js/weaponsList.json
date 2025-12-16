@@ -213,16 +213,6 @@
       "material": "BLAZE_ROD"
     },
     {
-      "id": "EMBER_ROD",
-      "name": "Ember Rod",
-      "weapon_type": "SWORD",
-      "rarity": "EPIC",
-      "damage": 80,
-      "strength": 35,
-      "ability": ["Right click"],
-      "material": "BLAZE_ROD"
-    },
-    {
       "id": "SULPHUR_BOW",
       "name": "Sulphur Bow",
       "weapon_type": "BOW",
