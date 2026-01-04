@@ -48,7 +48,7 @@ import { tempMessage, setAlert, clearAlert, showShareButton, enableInput } from 
     return;
     }
     const savedGuesses = JSON.parse(localStorage.getItem("skyblockdle_guesses") || "[]");
-    let shareRows = JSON.parse(localStorage.getItem("skyblockdle_shareRows") || "[]");
+    GameState.shareRows = JSON.parse(localStorage.getItem("skyblockdle_shareRows") || "[]");
     const restoredLastPlayed = localStorage.getItem("skyblockdle_last_played");
     const savedGuessesDate = localStorage.getItem("skyblockdle_guesses_date");
 
