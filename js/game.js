@@ -143,6 +143,12 @@ export function checkAnswer() {
             return;
         }
 
+        if (guess.toLowerCase() === "meowdding") {
+            const mensajes = ["meow", "mrrp", "mrrow", "purr", "meoww :3", ":3", ":3c"];
+            tempMessage(mensajes[Math.floor(Math.random() * mensajes.length)]);
+            return;
+        }
+
         if(guess.toLowerCase() == "furrybutts" || guess.toLowerCase() == "furbur"){
             tempMessage("cute")
             return;
