@@ -25,6 +25,7 @@ If you've guessed one of them, you won't be able to guess the other one. Any oth
 ## Credits
 
 Weapon sprites from <a href="https://hypixel.net/threads/0-23-4-hypixel-for-1-8-1-21-8.4174260/" target="_blank">Hypixel+</a><br>
+Weapon sprites from <a href="https://furfsky.net" target="_blank">Furfsky Reborn</a><br>
 Minecraft and Monocraft fonts by <a href="https://github.com/IdreesInc" target="_blank">IdreesInc</a><br>
 Inspired by <a href="https://www.terradle.com" target="_blank">Terradle</a><br>
 

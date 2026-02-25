@@ -1,5 +1,6 @@
 import { GameState } from "./state.js";
 import { pairOf } from "./utils.js";
+import { applyTexture } from "./textures.js";
 
 export function addGrid(itemData, isRestore = false) {
     const ROW_STAGGER_MS = 0;
@@ -48,8 +49,9 @@ export function addGrid(itemData, isRestore = false) {
             } else if (element == "§4Sin§5seeker Scythe"){
                 parsedName = "Sinseeker Scythe"
             }
-            const imgSrc = GameState.hplus ? `img/${itemData[1].toLowerCase()}.png` : `img/vanilla/${itemData[7].toLowerCase()}.png`;
-            cell.innerHTML = `<div class="imgCell"><img src='${imgSrc}' alt='${parsedName}' data-id='${itemData[1]}' data-material='${itemData[7]}' title='${parsedName}' height='55px'><div>${parsedName}</div></div>`;
+            cell.innerHTML = `<div class="imgCell"><img alt='${parsedName}' data-id='${itemData[1]}' data-material='${itemData[7]}' title='${parsedName}' height='55px'><div>${parsedName}</div></div>`;
+            const imgEl = cell.querySelector("img");
+            applyTexture(imgEl, itemData[1], itemData[7]);
         }else{
             cell.innerHTML = element
         }

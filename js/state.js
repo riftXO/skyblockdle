@@ -7,6 +7,7 @@ export const GameState = {
     shareRows: [],
     practiceActive: false,
     hplus: false,
+    furfsky: false,
     gaveUp: false,
     gameOver: false,
     practiceGameOver: false

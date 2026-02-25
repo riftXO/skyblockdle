@@ -1,5 +1,6 @@
 import { GameState, daggers } from "./state.js";
 import { checkAnswer } from "./game.js";
+import { applyTexture } from "./textures.js";
 
 const grid = document.getElementById("grid");
 const alertBox = document.getElementById("alert");
@@ -46,7 +47,7 @@ export function setupUI() {
     guessBtn.onclick = checkAnswer;
 
     setupAutocomplete();
-    setupHypixelToggle();
+    setupTextureToggles();
     setupModal();
     setupScramble();
 }
@@ -219,23 +220,43 @@ function setupAutocomplete() {
     });
 }
 
-/* ---------------- h+ toggle ---------------- */
+/* ---------------- texture toggles ---------------- */
 
-function setupHypixelToggle() {
-    const checkbox = document.getElementById("hpluscheck");
-    GameState.hplus = checkbox.checked;
+function setupTextureToggles() {
+    const hplusCheckbox = document.getElementById("hpluscheck");
+    const furfCheckbox = document.getElementById("furfcheck");
 
-    checkbox.addEventListener("change", e => {
-        GameState.hplus = e.target.checked;
+    GameState.hplus = hplusCheckbox.checked;
+    GameState.furfsky = furfCheckbox.checked;
 
+    function refreshGridTextures() {
         document.querySelectorAll(".imgCell img").forEach(img => {
             const id = img.dataset.id;
             const material = img.dataset.material;
-
-            img.src = GameState.hplus
-                ? `img/${id.toLowerCase()}.png`
-                : `img/vanilla/${material.toLowerCase()}.png`;
+            applyTexture(img, id, material);
         });
+    }
+
+    hplusCheckbox.addEventListener("change", e => {
+        GameState.hplus = e.target.checked;
+
+        if (GameState.hplus) {
+            GameState.furfsky = false;
+            furfCheckbox.checked = false;
+        }
+
+        refreshGridTextures();
+    });
+
+    furfCheckbox.addEventListener("change", e => {
+        GameState.furfsky = e.target.checked;
+
+        if (GameState.furfsky) {
+            GameState.hplus = false;
+            hplusCheckbox.checked = false;
+        }
+
+        refreshGridTextures();
     });
 }
 
